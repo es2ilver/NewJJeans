@@ -1,0 +1,33 @@
+{
+  "name": "NewsCredit",
+  "version": "0.1",
+  "author": "NewJJeans",
+  "manifest_version": 3,
+  "description": "NewsCredit: Elevate your news consumption with our verification system.",
+  "permissions": [
+    "https://entertain.naver.com/*"
+  ],
+  
+  "icons": {
+    "128": "media/logo128.png",
+    "48": "media/logo48.png",
+    "16": "media/logo16.png"
+  },
+  "action": {
+    "default_icon": {
+      "19": "media/logo16.png",
+      "38": "media/logo48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://entertain.naver.com/*"],
+    "js": ["src/news.js"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
