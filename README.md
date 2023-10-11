@@ -1,2 +1,8 @@
 # NewJJeans
-NewJJeans Project AI Model Part
+- 연예분야 뉴스기사 품질 판별 시스템
+
+### 팀 소개 및 역할
+- 홍우주 박준희 최은서 이정은
+### 프로젝트 요약
+- 크롬 확장프로그램 구현
+
